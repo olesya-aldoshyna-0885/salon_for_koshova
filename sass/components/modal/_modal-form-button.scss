@@ -1,0 +1,45 @@
+.register-form__button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid $primary-black-color;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $primary-black-color;
+  cursor: pointer;
+  transition: all 300ms $timing-function;
+  overflow: hidden;
+  animation-delay: 1500ms;
+  animation-duration: 4000ms;
+
+  &:hover {
+    color: $primary-text-color;
+    border-color: green;
+    background: transparent;
+  }
+
+  &::after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    transform: scale(0.1);
+  }
+}
+.register-form__button:hover::after {
+  background: green;
+  background: linear-gradient(0deg, rgb(2, 189, 80) 0%, rgb(3, 107, 11) 100%);
+  transform: scale(1);
+}

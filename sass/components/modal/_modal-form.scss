@@ -1,0 +1,133 @@
+.register-form__title {
+  @extend %text;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-black-color;
+}
+.register-form__group {
+  margin-bottom: 20px;
+}
+
+.register-form__field {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+.register-form__label {
+  display: block;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  transition: transform 250ms $timing-function;
+  .register-form__input:focus + & {
+    transform: translate(-50px, -45px) scale(0.8);
+  }
+  .register-form__input:not(:placeholder-shown) + & {
+    transform: translate(-50px, -45px) scale(0.8);
+  }
+}
+.register-form__input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid $primary-black-color;
+  padding-left: 42px;
+  padding-right: 42px;
+  outline: transparent;
+  transition: border-color 250ms $timing-function;
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: $susses-color;
+  }
+  &::placeholder {
+    opacity: 0;
+    transition: opacity 250ms $timing-function;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}
+
+.register-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  fill: $primary-black-color;
+  .register-form__input:focus ~ & {
+    fill: $accent-color;
+  }
+  .register-form__input:not(:placeholder-shown) ~ & {
+    fill: $accent-color;
+  }
+}
+.register-form__notification-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.register-form__input:not(:placeholder-shown):focus:invalid
+  ~ .register-form__notification-icon
+  .warning {
+  opacity: 1;
+}
+
+.register-form__input:not(:placeholder-shown):focus:valid
+  ~ .register-form__notification-icon
+  .success {
+  opacity: 1;
+}
+.success,
+.warning {
+  opacity: 0;
+  transition: opacity 200ms $timing-function;
+}
+.warning {
+  fill: $allert-color;
+}
+
+.success {
+  fill: $susses-color;
+}
+
+.register-form__message {
+  width: 100%;
+  height: 130px;
+  padding: 18px;
+  resize: none;
+  outline: transparent;
+  border: 1px solid $primary-black-color;
+  border-radius: 10px;
+  font-size: 14px;
+  &::placeholder {
+    font-size: 14px;
+  }
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+  }
+}
+
+.register-form__message-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

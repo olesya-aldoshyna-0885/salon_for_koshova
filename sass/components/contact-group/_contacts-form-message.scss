@@ -1,0 +1,63 @@
+.contacts-group-form__form-message-field {
+  display: flex;
+  flex-flow: column;
+}
+
+.contacts-form-message {
+  width: 100%;
+  min-height: 24px;
+  border: none;
+  border-bottom: 1px solid $form-text-color;
+  outline: none;
+  margin-bottom: 44px;
+  background-color: transparent;
+  resize: none;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.1em;
+  color: $primary-text-color;
+  transition: border-color 250ms $timing-function;
+
+  &:focus {
+    border-color: $primary-text-color;
+  }
+ 
+  &:not(:placeholder-shown) {
+    border-color: $primary-text-color;
+  }
+  &::placeholder {
+    opacity: 0;
+    transition: opacity 250ms $timing-function;
+    font-size: 12px;
+  }
+  &:focus::placeholder {
+    opacity: 1;
+  }
+  @media screen and (min-width:767px) and (max-width:1199px) {
+    width: 98%;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 96%;
+  }
+}
+
+.contacts-group-form__form-message-label {
+  display: block;
+  margin-bottom: 60px;
+  order: -1;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $form-text-color;
+  transition: color 250ms $timing-function;
+
+  .contacts-form-message:focus + & {
+    color: $primary-text-color;
+  }
+  .contacts-form-message:not(:placeholder-shown) + & {
+    color: $primary-text-color;
+  }
+}

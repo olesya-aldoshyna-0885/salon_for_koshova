@@ -1,0 +1,47 @@
+.hero__sidebar {
+  width: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width:767px) {
+    display:none;
+  }
+
+}
+.sidebar-list {
+  @extend %list;
+  display: flex;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  margin-top: auto;
+  gap: 40px;
+}
+.sidebar-list__link {
+display: inline-block;
+padding-top: 38px;
+padding-bottom: 25px;
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15 / 11);
+letter-spacing: 0.2em;
+color: $title-text-color-light-theme;
+transition: color 250ms $timing-function;
+&:hover,
+&:focus {
+  color: $accent-color;
+}
+}
+
+.sidebar-list__link-before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:40px;
+  &::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: $title-text-color-light-theme;
+}
+}

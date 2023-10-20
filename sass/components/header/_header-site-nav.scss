@@ -1,0 +1,27 @@
+.site-nav__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+  @media screen and (max-width:767px) {
+   display: none; 
+  }
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+}
+.site-nav__link {
+  display: block;
+  padding: 52px 0px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: $primary-text-color;
+  transition: color 250ms $timing-function, transform 250ms $timing-function;
+&:hover,
+&:focus {
+  color: $accent-color;
+  transform: scale(1.3);
+}
+}

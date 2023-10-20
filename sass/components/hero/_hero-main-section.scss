@@ -1,0 +1,75 @@
+.hero__main {
+  position: relative;
+  padding-top: 208px;
+  padding-bottom: 162px;
+  padding-left: 31px;
+  display: flex;
+  flex-grow: 1;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 216px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 272px;
+    padding-left: 80px;
+    padding-bottom: 220px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 208px;
+  }
+}
+
+.group-title {
+  max-width: 240px;
+  @media screen and (min-width: 480px) {
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 510px;
+  }
+}
+.group-title__uppertitle--dark-theme {
+  @extend %group-title__uppertitle;
+  @extend %text;
+  color: $upper-title-button-dark-theme-color;
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $upper-title-button-dark-theme-color;
+  }
+}
+.group-title__main-title {
+  @extend %text;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: calc(46 / 37);
+  letter-spacing: 0.05em;
+  color: $primary-text-color;
+  animation-delay: 450ms;
+  
+  @media screen and (min-width: 480px) {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: calc(85 / 72);
+  }
+}
+
+.group-title__subtitle {
+  @extend %text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(26 / 18);
+  letter-spacing: 0.02em;
+  color: $sub-title-dark-theme-color;
+  animation-delay: 950ms;
+  @media screen and (min-width:768px) {
+    font-size: 18px;
+    line-height: 30 / 18;
+  }
+}

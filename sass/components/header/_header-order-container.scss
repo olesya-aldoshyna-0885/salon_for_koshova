@@ -1,0 +1,29 @@
+.order-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 45px;
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+}
+
+.order-container__tell {
+  display: block;
+  padding: 52px 0px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  transition: color 250ms $timing-function, transform 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transform: scale(1.4);
+  }
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
+}

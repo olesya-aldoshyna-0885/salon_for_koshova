@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: backdrop-filter $hero-animation, background-color $hero-animation;
+}
+.header.no-transparency {
+  backdrop-filter: blur(4px);
+  background-color: rgba(26, 27, 31, 0.7);
+}
+.header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    padding-left: 30px;
+  }
+}
+.logo {
+  display: block;
+  padding: 20px 0px 20px 0px;
+
+  @media screen and (min-width: 768px) and (max-with: 1199px) {
+    display: block;
+    padding: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 132px;
+  }
+}
+.logo__icon {
+  fill: $title-text-color-light-theme;
+  transition: fill 250ms $timing-function, transform 250ms $timing-function;
+  .logo:hover &,
+  .logo:focus & {
+    transform: scale(1.5);
+    fill: $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    fill: $primary-text-color;
+  }
+}

@@ -1,0 +1,102 @@
+.burger-menu__nav {
+  @extend %list;
+  margin-bottom: 64px;
+}
+.burger-menu__nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.burger-menu__nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.1em;
+  color: $title-text-color-light-theme;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
+  &--current:hover,
+  &--current:focus {
+    color: $title-text-color-light-theme;
+  }
+}
+.burger-menu__tell {
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $title-text-color-light-theme;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.burger-menu__order-button {
+  width: 194px;
+  min-height: 40px;
+  border-radius: 25px;
+  border-color: $accent-color;
+  margin-bottom: 64px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $title-text-color-light-theme;
+  cursor: pointer;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function,
+    transform 300ms $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    color: red;
+    border-color: $meta-sub-title-text-color;
+    background-color: $prices-bg-color;
+  }
+}
+.burger-menu__socials {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger-menu__socials-item:not(:last-child){
+  margin-bottom: 24px;
+}
+.burger-menu__socials-item--before {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  &::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $title-text-color-light-theme;
+  }
+}
+.burger-menu__socials-link {
+  display: block;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: $title-text-color-light-theme;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

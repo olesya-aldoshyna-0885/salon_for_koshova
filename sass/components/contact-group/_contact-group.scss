@@ -1,0 +1,51 @@
+.contacts-group {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $third-bg-color;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 479px) {
+    background-image: url(../images/contacts-bg/contacts-mob@2x.webp);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 576px) {
+    background-image: url(../images/contacts-bg/contacts-mob@1x.webp);
+    background-position: top calc(60% + 248px) left;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg/contacts-mob@2x.webp);
+      background-position: top calc(50% + 290px) left;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 1199px) {
+    background-image: url(../images/contacts-bg/contacts-tab@1x.webp);
+    background-position: top calc(50% + 270px) left;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg/contacts-tab@2x.webp);
+      background-position: top calc(50% + 270px) left;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/contacts-bg/contacts-desc@1x.webp);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 312px) top;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg/contacts-desc@2x.webp);
+      background-position: left calc(50% + 625px) top;
+    }
+  }
+}
+.contacts-group-container {
+  @extend %container;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}

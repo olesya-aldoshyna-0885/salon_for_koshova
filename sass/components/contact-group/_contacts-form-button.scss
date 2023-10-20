@@ -1,0 +1,29 @@
+.contacts-group__button-container{
+@media screen and (max-width:767px) {
+    text-align: center;
+  }
+}
+
+.contacts-group__button {
+  width: 160px;
+  min-height: 40px;
+  border-radius: 25px;
+  border-color: $accent-color;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  cursor: pointer;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function,
+    transform 300ms $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    color: red;
+    border-color: $meta-sub-title-text-color;
+    background-color: $prices-bg-color;
+  }
+}
