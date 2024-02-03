@@ -111,16 +111,17 @@
   }
 }
 
+
 .prices-meta-container__list {
   @extend %list;
   max-width: 685px;
-
+  
   transition: transform 300ms $timing-function;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-
+  
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     padding: 30px 40px;
@@ -175,8 +176,8 @@
   letter-spacing: 0.02em;
   color: $sub-title-dark-theme-color;
   @media screen and (max-width:479px){
-     font-size: 12px;
-      line-height: calc(16 / 10);
+    font-size: 12px;
+    line-height: calc(16 / 10);
   }
   @media screen and (min-width:480px) and (max-width:767px) {
     font-size: 14px;
@@ -190,13 +191,22 @@
   letter-spacing: 0.02em;
   color: $sub-title-dark-theme-color;
   @media screen and (max-width:479px){
-     font-size: 12px;
-      line-height: calc(16 / 10);
+    font-size: 12px;
+    line-height: calc(16 / 10);
   }
   @media screen and (min-width:480px) and (max-width:767px) {
     font-size: 14px;
     line-height: calc(20 / 14);
   }
+}
+.prices-meta-container__title {
+  @extend %text;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    letter-spacing: 0.02em;
+    color: $sub-title-dark-theme-color;
 }
 .price-button-container {
   display: flex;

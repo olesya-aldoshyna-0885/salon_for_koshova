@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!-- <favicon></favicon> -->
     <title>Barber-Shop</title>
+    <link rel="icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
@@ -37,9 +39,10 @@
     <header class="header" data-header>
       <div class="header__container">
         <a href="./index.html" class="logo">
-          <svg class="logo__icon" width="68" height="56">
+          <img src="./images/logo/logo_white.jpg" alt ="logo" width="68" height="56"/>
+          <!-- <svg class="logo__icon" width="68" height="56">
             <use href="./icon/icon.svg#Logo"></use>
-          </svg>
+          </svg> -->
         </a>
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -58,7 +61,7 @@
           </ul>
         </nav>
         <div class="order-container">
-          <a href="tel:+380971469716" class="order-container__tell">+38 097 146 97 16</a
+          <a href="tel:+380505557058" class="order-container__tell">+38 050 555 70 58</a
           >
           <button
             type="button"
@@ -107,7 +110,7 @@
                 >ROYALTY BarberShop</h1
               >
               <p class="group-title__subtitle animate__animated animate__zoomInDown">
-                Ми є експертами в модних чоловічих стрижках. Працюємо швидко, акуратно та стильно.
+                За кожним ефектним чоловіком стоїть професійний барбер.
               </p>
             </div>
            
@@ -134,8 +137,8 @@
             </li>
           </ul>
           <div class="about-meta-group">
-            <p class="about-meta-group__uppertitle">Про нас </p>
-            <h2 class="about-meta-group__title"> Найкращий BarberShop у вашому місті </h2>
+            <p class="about-meta-group__uppertitle">Про нас</p>
+            <h2 class="about-meta-group__title">Найкращий BarberShop у вашому місті</h2>
             <p class="about-meta-group__sub-title">
               Якщо ви хочете додати своєму іміджу впевненості, вам обов'язково варто завітати до нас.
             </p>
@@ -152,46 +155,83 @@
       <section class="prices">
         <div class="prices-container">
           <p class="prices__uppertitle"> проведи свій час з best майстрами </p>
+
           <h2 class="prices__title">Послуги та прайс</h2>
           <div class="prices-meta-container">
             <ul class="prices-meta-container__list">
+              <h3 class="prices-meta-container__title">Топ-майстер</h3>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Men’s haircut</span
-                ><span class="prices-meta-container__price">from 300 uah. </span>
+                <span class="prices-meta-container__meta">Стрижка</span
+                ><span class="prices-meta-container__price">600 грн, 60 хв </span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Beard trim</span
-                ><span class="prices-meta-container__price">from 300 uah. </span>
+                <span class="prices-meta-container__meta">Моделювання бороди</span
+                ><span class="prices-meta-container__price">450 грн, 45 хв </span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Mustache trim</span
-                ><span class="prices-meta-container__price">from 200 uah.</span>
+                <span class="prices-meta-container__meta">Королівське гоління</span>
+                <span class="prices-meta-container__price">450 грн, 45 хв</span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Straight razor shave</span
-                ><span class="prices-meta-container__price">from 200 uah.</span>
+                <span class="prices-meta-container__meta">Стрижка та моделювання
+                  <br> бороди</span>
+                <span class="prices-meta-container__price">850 грн, 90 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Стрижка під насадки без Фейду</span>
+                <span class="prices-meta-container__price">450 грн, 30 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Стрижка під насадки без Фейду
+                  <br> та моделювання бороди</span>
+                <span class="prices-meta-container__price">650 грн, 60 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Гоління бороди під Шейвер</span>
+                <span class="prices-meta-container__price">300 грн, 30 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Камуфлювання волосся</span>
+                <span class="prices-meta-container__price">450 грн, 45 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Камуфлювання бороди</span>
+                <span class="prices-meta-container__price">300 грн, 45 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta"> VIP-пакет для нього</span>
+                <!-- <span class="prices-meta-container__price">Стрижка, масаж голови та обличчя, альгінатна маска, скрабування обличчя та рук, комплекс проти випадіння волосся</span> -->
+                <span class="prices-meta-container__price">1500 грн, 120 хв</span>
               </li>
             </ul>
-
             <ul class="prices-meta-container__list">
+              <h3 class="prices-meta-container__title">Барбер</h3>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Trainee’s haircut</span
-                ><span class="prices-meta-container__price">from 50 uah. </span>
+                <span class="prices-meta-container__meta">Віск</span>
+                <span class="prices-meta-container__price">100 грн, 20 хв</span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Haircut under the nozzle</span
-                ><span class="prices-meta-container__price">from 200 uah. </span>
+                <span class="prices-meta-container__meta">Масаж голови та обличчя</span>
+                <span class="prices-meta-container__price">200 грн, 15 хв</span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Children’s haircut (0-12 y.o.)</span
-                ><span class="prices-meta-container__price">from 300 uah.</span>
+                <span class="prices-meta-container__meta">Комплекс проти випадіння волосся</span>
+                <span class="prices-meta-container__price">250 грн, 20 хв</span>
               </li>
               <li class="prices-meta-container__list-item">
-                <span class="prices-meta-container__meta">Camouflage of gray hair</span
-                ><span class="prices-meta-container__price">from 200 uah.</span>
+                <span class="prices-meta-container__meta">Альгінатна маска</span>
+                <span class="prices-meta-container__price">350 грн, 30 хв</span>
               </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">скрабування обличчя та рук</span>
+                <span class="prices-meta-container__price">200 грн, 15 хв</span>
+              </li>
+              <li class="prices-meta-container__list-item">
+                <span class="prices-meta-container__meta">Миття голови + укладка</span>
+                <span class="prices-meta-container__price">100 грн, 30 хв</span>
             </ul>
-          </div>
+        </div>
+
           <div class="price-button-container">
             <button class="prices-button" type="button" data-modal-open>online-бронювання</button>
           </div>
@@ -500,7 +540,7 @@
                     required
                     minlength="13"
                     maxlength="13"
-                    placeholder="+38 097 146 97 16"
+                    placeholder="+38 050 555 70 58"
                   >
                   <span class="contacts-group-form__form-label">ТЕЛЕФОН*</span>
                   <svg class="contacts-group-form__notification-icon" width="18" height="18">
@@ -537,16 +577,17 @@
                     <svg class="contacts__icon" width="24" height="24">
                       <use href="./icon/icon.svg#map-pin"></use>
                     </svg>
-                    st. Vasilkovaya, 7A <br >
-                    Kiev, 08132</a
+                    prosp. Heroiv Nebesnoi Sotni, 16/3, <br>
+                    HK "Y-Kvartal"<br >
+                    Kiev</a
                   >
                 </li>
                 <li class="contacts__list-item">
-                  <a href="tel:+3800971469716" class="contacts__link">
+                  <a href="tel:+380505557058" class="contacts__link">
                     <svg class="contacts__icon" width="24" height="24">
                       <use href="./icon/icon.svg#phone"></use>
                     </svg>
-                    +38 097 146 97 16
+                    +38 050 555 70 58
                   </a>
                 </li>
                 <li class="contacts__list-item">
@@ -554,14 +595,14 @@
                     ><svg class="contacts__icon" width="24" height="24">
                       <use href="./icon/icon.svg#mail"></use>
                     </svg>
-                    barbershop@email.com
+                    royaltybarbershop@email.com
                   </a>
                 </li>
               </ul>
             </address>
             <div class="contacts__meta-container">
               <p class="contacts__uppertitle">робочi години</p>
-              <p class="contacts__schedule">Кожного дня з 9:00 до 20:00</p>
+              <p class="contacts__schedule">Кожного дня з 10:00 до 21:00</p>
             </div>
             </div>
           </section>
@@ -700,7 +741,7 @@
         </li>
       </ul>
       <div class="burger-menu__order-container">
-          <a href="tel:+3800971469716" class="burger-menu__tell">+38 097 146 97 16</a
+          <a href="tel:+380505557058" class="burger-menu__tell">+38 050 555 70 58</a
           >
           <button
             type="button"
